@@ -1,0 +1,26 @@
+{
+  "name": "TippApp",
+  "version": "1.0.0",
+  "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "app.js",
+  "scripts": {
+    "build": "postcss src/style.css -o build/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAMPSLOPY/TippApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CAMPSLOPY/TippApp/issues"
+  },
+  "homepage": "https://github.com/CAMPSLOPY/TippApp#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.6",
+    "watch": "^1.0.2"
+  }
+}
