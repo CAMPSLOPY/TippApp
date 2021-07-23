@@ -4,7 +4,8 @@
   "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
   "main": "app.js",
   "scripts": {
-    "build": "postcss src/style.css -o build/main.css"
+    "build": "postcss src/style.css -o build/main.css",
+    "watch": "watch `npm run build` ./build"
   },
   "repository": {
     "type": "git",
