@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss ./src/styles.css -o ./public/main.css",
-    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/main.css"
+    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/main.css",
+    "watch": "watch npm run build ./dist"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "dependencies": {
     "autoprefixer": "^10.3.1",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.6"
+    "tailwindcss": "^2.2.6",
+    "watch": "^1.0.2"
   }
 }

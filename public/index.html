@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="/images/favicon-32x32.png">
+    <meta name="robots" content="index,follow" />
+    <meta
+    name="description"
+    content="This application is used to calculate Tips for customers."/>
+
+    <title>TippApp</title>
+</head>
+<body>
+  <main class=" bg-main ">
+
+  <section class="min-h-screen  relative flex  w-full m-auto items-center justify-center flex-col">
+    <img src="/images/logo.svg" alt="logo-image">
+    <div class="font-google-1 relative  bg-white w-7/12 shadow-lg mt-10 flex rounded-lg">
+    <form class="first-card w-full p-6">
+        <div class="bill-payment relative my-7 mx-0">
+            <p class=" text text-2xl mb-3  font-semibold   ">Bill</p>
+            <div>
+        <img class="absolute left-3 bottom-2" src="/images/icon-dollar.svg" alt="">
+        <input class=" placeholder-darkgrayiscyan  text-right py-0 px-2 w-full bg-verylightgrayishcyan  text-main text-4xl" type="text" placeholder="0">
+            </div>
+        </div>
+        <div class="tip-selector my-7 mx-0 font-google-1">
+            <p>Select  Tip  %</p>
+            <div class="tip-selector-buttons grid gap-3 grid-cols-full">
+                <button class="font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md">5%</button>
+                <button class="font-bold font-google-1  h-12 bg-verydarkcyan text-2xl text-white-main rounded-md">10$</button>
+                <button class="font-bold font-google-1 h-12 bg-verydarkcyan text-2xl text-white-main  rounded-md">15%</button>
+                <button class="font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md">25%</button>
+                <button class="font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md">50%</button>
+               <input class=""  type="text" placeholder="Custom">
+            </div>
+              
+        </div>
+        <div class="people  relative my-7 mx-0">
+            <p >Number of People</p>
+            <div>
+                <img class="absolute left-3 bottom-2" src="/images/icon-person.svg" alt="">
+                <input class=" font-google-1 placeholder-darkgrayiscyan text-right w-full py-0 px-2 bg-verylightgrayishcyan text-main text-4xl" type="text" placeholder="0">
+            </div>
+        </div>
+    </form>
+
+    <div class="second-card w-80 bg-verydarkcyan m-6 rounded-lg">
+
+        <div class="tip-person">
+            <p>Tip Amount <span>/ person</span></p>
+            <div class="tip-amount">$0.00</div>
+        </div>
+        <div class="tip-total">
+            <p>Total <span>/ person</span></p>
+            <div class="tip-amount">$0.00</div>
+        </div>
+        <button>RESET</button>
+    </div>
+    </div>
+  </section>
+
+  </main>
+</body>
+</html>
