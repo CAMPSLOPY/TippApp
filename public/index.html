@@ -23,50 +23,56 @@
   <section class="sm:min-h-0 md:min-h-screen  relative flex  w-full m-auto items-center md:justify-center flex-col">
     <img class="my-9 " src="/images/logo.svg" alt="logo-image">
     <div class="  min-h-screen  md:min-h-0  font-google-1  bg-white-main relative   md:w-7/12 shadow-lg md:mt-10 rounded-t-2xl   md:rounded-lg cursor-pointer md:flex">
-    <form class=" first-card w-80 m-auto md:w-full  bg-white md:m-6">
-        <div class="bill-payment relative my-7 mx-0">
+    
+    
+        <form class="form-section  first-card w-80 m-auto md:w-full  bg-white md:m-6">
+        <div class="bill-section relative my-7 mx-0">
             <p class="mb-3 font-bold text-darkgrayishcyan2">Bill</p>
-            <div>
-        <img class="absolute left-3 bottom-2" src="/images/icon-dollar.svg" alt="">
-        <input class="outline-none border-2 border-transparent hover:border-darkcyan rounded-md placeholder-gray-300 text-right py-0 px-2 w-full bg-verylightgrayishcyan   text-main text-4xl" type="text" placeholder="0">
+            <div class="bill-payment">
+        <img class="absolute left-3 bottom-3" src="/images/icon-dollar.svg" alt="">
+        <input class="bill-payment-input outline-none border-2 cursor-pointer border-transparent focus:border-darkcyan rounded-md placeholder-gray-300 text-right py-0 px-2 w-full bg-verylightgrayishcyan   text-main text-4xl" type="text" placeholder="0">
             </div>
         </div>
-        <div class="tip-selector my-7 mx-0 font-google-1">
+        <div class="bill-tip-selector my-7 mx-0 font-google-1">
             <p>Select  Tip  %</p>
-            <div class="tip-selector-buttons grid gap-3 grid-cols-mobi md:grid-cols-full">
-                <button class="font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor ">5%</button>
-                <button class="font-bold font-google-1  h-12 bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor">10$</button>
-                <button class="font-bold font-google-1 h-12 bg-verydarkcyan text-2xl text-white-main  rounded-md hover:text-main hover:bg-cyancolor">15%</button>
-                <button class="font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor">25%</button>
-                <button class="font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor">50%</button>
+            <div class="bill-tip-selector-buttons grid gap-3 grid-cols-mobi md:grid-cols-full">
+                <button class="bill-tip-buttons font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor ">5%</button>
+                <button class="bill-tip-buttons font-bold font-google-1  h-12 bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor">10$</button>
+                <button class="bill-tip-buttons font-bold font-google-1 h-12 bg-verydarkcyan text-2xl text-white-main  rounded-md hover:text-main hover:bg-cyancolor">15%</button>
+                <button class="bill-tip-buttons font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor">25%</button>
+                <button class="bill-tip-buttons font-bold font-google-1 h-12  bg-verydarkcyan text-2xl text-white-main rounded-md hover:text-main hover:bg-cyancolor">50%</button>
                <input class=" text-center h-12 text-2xl  placeholder-green-900 bg-verylightgrayishcyan rounded-md outline-none border-transparent border-2 hover:border-darkcyan  text-main cursor-pointer" type="text" placeholder="Custom">
             </div>
               
         </div>
         <div class="people  relative my-7 mx-0">
-            <p >Number of People</p>
-            <div>
-                <img class="absolute left-3 bottom-2" src="/images/icon-person.svg" alt="">
-                <input class="outline-none border-2 border-transparent hover:border-darkcyan rounded-md  font-google-1  text-right w-full py-0 px-2 bg-verylightgrayishcyan text-main text-4xl" type="text" placeholder="0">
+            <div class="flex justify-between people-info">
+                <p >Number of People</p>
+                <p class="hidden people-text">can't be zero</p>
+            </div>
+            <div class="people-money">
+                <img class="absolute left-3 bottom-3" src="/images/icon-person.svg" alt="">
+                <input class="outline-none people-money-input  border-2 border-transparent focus:border-darkcyan rounded-md cursor-pointer  font-google-1  text-right w-full py-0 px-2 bg-verylightgrayishcyan text-main text-4xl" type="text" placeholder="0">
             </div>
         </div>
     </form>
 
-    <div class="overflow-hidden second-card  px-6 w-80 my-16 m-auto md:w-full bg-verydarkcyan  md:m-6 rounded-lg flex flex-col relative ">
+    <div class="person-section overflow-hidden second-card  px-6 w-80 my-16 m-auto md:w-full bg-verydarkcyan  md:m-6 rounded-lg flex flex-col relative ">
 
-        <div class="tip-person flex items-center my-8 md:my-14 justify-between ">
-            <p class="text-white-main font-bold">Tip Amount <br> <span class=" text-darkgrayishcyan2 ">/ person</span></p>
-            <div class="tip-amount text-right text-3xl  md:text-5xl text-strongcyan font-bold">$0.00</div>
+        <div class="person-tip-section  flex items-center my-6  justify-between ">
+            <p class="text-white-main text-sm  font-bold">Tip Amount <br> <span class=" text-darkgrayishcyan2 ">/ person</span></p>
+            <div class="person-tip-amount text-right text-3xl  md:text-5xl text-strongcyan font-bold">$0.00</div>
         </div>
-        <div class="tip-total flex items-center  my-8 md:my-14 justify-between">
-            <p class="text-white-main font-bold">Total <br> <span class=" text-darkgrayishcyan2 ">/ person</span></p>
-            <div class="tip-amount text-right  text-3xl  md:text-5xl text-strongcyan font-bold">$0.00</div>
+        <div class="person-section-total flex items-center  my-6  justify-between">
+            <p class="text-white-main text-sm font-bold">Total <br> <span class=" text-darkgrayishcyan2 ">/ person</span></p>
+            <div class="person-tip-amount2 text-right  text-3xl  md:text-5xl text-strongcyan font-bold">$0.00</div>
         </div>
-        <button class="hover:bg-cyancolor text-main relative bg-main2 -bottom-1 md:-bottom-0 font-bold  w-full  md:w-80 md:m-auto my-6  py-3 px-0  rounded-md">RESET</button>
+        <button class="resetBtn hover:bg-cyancolor text-main relative bg-main2 -bottom-1 md:-bottom-0 font-bold  w-full  md:m-auto my-6  py-3 px-0  rounded-md">RESET</button>
     </div>
     </div>
   </section>
 
   </main>
+  <script src="app.js"></script>
 </body>
 </html>
