@@ -14,3 +14,11 @@
     --white: hsl(0, 0%, 100%);
     --main : #01545ae0;
 }
+
+/* to be added in JS */
+
+.people.people-text{
+    color: red;
+    display: flex;
+}
+
