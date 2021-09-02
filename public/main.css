@@ -32736,6 +32736,14 @@ video {
   --main : #01545ae0;
 }
 
+/* to be added in JS */
+
+.show-error{
+  visibility: visible;
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -193160,3 +193168,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+

@@ -17,8 +17,9 @@
 
 /* to be added in JS */
 
-.people.people-text{
-    color: red;
-    display: flex;
+.show-error{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease-in-out;
 }
 
