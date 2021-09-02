@@ -32,7 +32,7 @@ module.exports = {
       "main2" : "#01545ae0"
     }),
     fontFamily : {
-      'google-1': "'Space Mono', monospace"
+      "google-1": "'Space Mono', monospace"
     },
     extend: {
       gridTemplateColumns: {
