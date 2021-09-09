@@ -19,7 +19,7 @@ selectTip.addEventListener('click', (e)=>{
 
     if(billInputvalue && numberOfPeopleValue){
     totalEl.textContent = `$${Math.floor(total - tipAmount)}`;
-    tipAmountEl.textContent = `$${tipAmount.toFixed(2)}`;
+    tipAmountEl.textContent = `$${tipAmount.toFixed(3)}`;
     error.classList.remove('show-error');
     numberOfPeople.style.color = 'green'
     numberOfPeople.style.border ='1px solid hsl(172, 57%, 50%)';
@@ -33,16 +33,33 @@ selectTip.addEventListener('click', (e)=>{
 
 // clear the whole page 
 resetBtn.addEventListener('click', (e)=>{
+const customInput =customBtn.value;
 billInput.value =null;
 numberOfPeople.value = null;
 totalEl.innerHTML = `<div>$0.00</div>`;
 tipAmountEl.innerHTML = `<div>$0.00</div>`;
 resetBtn.style.backgroundColor ="#01545ae0";
-customBtn.value = "Custom"
+CustomChange();
 })
+
+function CustomChange (){
+    if(!resetBtn.click === true){
+        customBtn.value =  'CUSTOM';
+    }else{
+        customBtn.value = "";
+    }
+}
 
 customBtn.addEventListener('submit', (e) =>{
     e.preventDefault();
-const custom = e.target.value;
-console.log(custom)
+const customInput = Number(customBtn.value);
+const billInputvalue = Number(billInput.value);
+const  numberOfPeopleValue = Number(numberOfPeople.value);
+const total = billInputvalue / numberOfPeopleValue;
+const tipAmount = total * (custom/100);
+
+if  (billInputvalue && numberOfPeopleValue){
+    totalEl.textContent = `$${Math.floor(total - tipAmount)}`;
+    tipAmountEl.textContent = `$${tipAmount.toFixed(3)}`;
+}
 })
