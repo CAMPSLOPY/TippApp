@@ -24,3 +24,14 @@
     color: red;
 }
 
+.custom::placeholder{
+    position: absolute;
+    color: hsl(183, 100%, 15%);
+    left: .9rem;
+}
+
+.pictures{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
