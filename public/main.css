@@ -32742,6 +32742,31 @@ video {
   visibility: visible;
   opacity: 1;
   transition: 1s ease-in-out;
+  color: red;
+}
+
+.custom::-moz-placeholder{
+  position: absolute;
+  color: hsl(183, 100%, 15%);
+  left: .9rem;
+}
+
+.custom:-ms-input-placeholder{
+  position: absolute;
+  color: hsl(183, 100%, 15%);
+  left: .9rem;
+}
+
+.custom::placeholder{
+  position: absolute;
+  color: hsl(183, 100%, 15%);
+  left: .9rem;
+}
+
+.pictures{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
 
 @media (min-width: 640px) {
@@ -193168,4 +193193,3 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
