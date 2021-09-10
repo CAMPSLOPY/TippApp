@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link rel="favicon" href="./images/favicon-32x32.png">
+    <link rel="icon" href="./images/favicon-32x32.png">
 
     <title>TippApp</title>
 </head>
@@ -21,16 +21,16 @@
   <main class="bg-main min-h-screen overflow-hidden z-10">
 
   <section class="sm:min-h-0 md:min-h-screen  relative flex  w-full m-auto items-center md:justify-center flex-col">
-    <img class="my-9" src="./images/logo.svg" alt="logo-image">
-    <div class="form-section  min-h-screen  md:min-h-0  font-google-1  bg-white-main relative   md:w-7/12 shadow-lg md:mt-10 rounded-t-2xl   md:rounded-lg cursor-pointer md:flex">
+    <img class="my-9" src="./images/logo.svg" alt="image of the logo">
+    <div class="form-section  min-h-screen  md:min-h-0   font-google-1  bg-white-main relative   md:w-7/12  shadow-lg md:mt-10 rounded-t-2xl   md:rounded-lg cursor-pointer md:flex">
     
     
         <form class="form  first-card w-80 m-auto md:w-full  bg-white md:m-6">
         <div class="bill-section relative my-7 mx-0">
-            <p class="mb-3 font-bold text-darkgrayishcyan2">Bill</p>
+            <label for="bill" class="mb-3 font-bold text-darkgrayishcyan2">Bill</label>
             <div class="bill-payment">
         <img class="absolute left-3 bottom-3" src="./images/icon-dollar.svg" alt="dollar icon">
-        <input class="bill outline-none border-2 cursor-pointer border-transparent focus:border-darkcyan rounded-md placeholder-gray-300 text-right py-0 px-2 w-full bg-verylightgrayishcyan   text-main text-4xl" type="text" placeholder="0">
+        <input id="bill" class="bill outline-none border-2 cursor-pointer border-transparent focus:border-darkcyan rounded-md placeholder-gray-300 text-right py-0 px-2 w-full bg-verylightgrayishcyan   text-main text-4xl" type="text" placeholder="0">
             </div>
         </div>
         <div class=" my-7 mx-0 font-google-1 relative">
