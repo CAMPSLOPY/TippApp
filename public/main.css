@@ -32763,11 +32763,6 @@ video {
   left: .9rem;
 }
 
-/* MEDIA QUERIES */
-
-@media  screen and (max-width: 600px) {
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -193192,3 +193187,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
