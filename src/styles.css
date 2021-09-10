@@ -29,3 +29,11 @@
     color: hsl(183, 100%, 15%);
     left: .9rem;
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media  screen and (max-width: 600px) {
+     
+    }
